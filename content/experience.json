@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ra-uh",
+    "type": "experience",
+    "title": "Research Assistant",
+    "slug": "research-assistant-uh",
+    "tags": ["University of Houston", "CYBER-CARE"],
+    "summary": "Research Assistant at the University of Houston, working within the CYBER-CARE research environment.",
+    "meta": { "org": "University of Houston", "startDate": "2026-09-01", "current": true, "link": null }
+  },
+  {
+    "id": "se1-synesis",
+    "type": "experience",
+    "title": "Software Engineer I",
+    "slug": "software-engineer-synesis",
+    "tags": ["Synesis IT Ltd"],
+    "summary": "Full-time software engineering role at Synesis IT Ltd.",
+    "links": [{ "label": "Synesis IT Ltd", "url": "https://synesisitltd.com/" }],
+    "meta": { "org": "Synesis IT Ltd", "startDate": "2025-06-01", "current": true }
+  }
+]

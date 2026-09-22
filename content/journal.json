@@ -1,0 +1,46 @@
+[
+  {
+    "id": "small-world-moment",
+    "type": "journal",
+    "title": "Small World Moment",
+    "slug": "small-world-moment",
+    "date": "2025-01-01",
+    "tags": ["Life", "Dhaka"],
+    "summary": "A bizarre small-world moment at Ibn-Sina Hospital, and the strange way old classmates resurface.",
+    "links": [{ "label": "Read the full piece", "url": "https://www.notion.so/eyenine/Small-World-Moment-1fbdad8c605e80a9aed5c239de923f1b?pvs=4" }],
+    "meta": { "content": "Just had one of those bizarre \"small-world\" moments at Ibn-Sina Hospital today. Picture this: packed waiting area, no seats, everyone clutching their appointment slips. I'm standing there, half-zoned-out, when I lock eyes with a guy who looks so familiar. We must have shared 7-9 years of the same classroom back in school, not best friends, not rivals, just that solid \"hey-bro-what's-up\" relationship." }
+  },
+  {
+    "id": "my-peace",
+    "type": "journal",
+    "title": "My Peace",
+    "slug": "my-peace",
+    "date": "2025-01-01",
+    "tags": ["Life", "Nature"],
+    "summary": "On finding refuge in a quiet, beautiful place whenever things get heavy.",
+    "links": [{ "label": "Read the full piece", "url": "https://eyenine.notion.site/My-Peace-1fbdad8c605e806cb618f5c0913825c1?pvs=4" }],
+    "meta": { "content": "Feeling blessed to have this beautiful place as my refuge. Whenever I feel pain, I come here to enjoy the tranquility of nature." }
+  },
+  {
+    "id": "tom-cruise",
+    "type": "journal",
+    "title": "Tom Cruise: The Man Who Makes the Impossible Possible",
+    "slug": "tom-cruise",
+    "date": "2025-01-01",
+    "tags": ["Movies", "Inspiration"],
+    "summary": "On unwavering focus, craft, and why Tom Cruise has always stood out.",
+    "links": [{ "label": "Read the full piece", "url": "https://www.facebook.com/share/p/14wS9GhPyP/" }],
+    "meta": { "content": "Tom Cruise has always been one of my favorite actors, not just because of his charm, acting skills, or humor, but because of his relentless dedication to his craft. He does what no one else can, or even dares to do. A man of unwavering focus, he pushes through every obstacle until the impossible becomes possible." }
+  },
+  {
+    "id": "eloelo-bhabna",
+    "type": "journal",
+    "title": "হঠাৎ হঠাৎ কিছু এলোমেলো ভাবনার সংগ্রহ",
+    "slug": "elomelo-bhabna",
+    "date": "2025-01-01",
+    "tags": ["Reflection", "Bangla"],
+    "summary": "A loose collection of the sudden, unplanned thoughts that surface late at night.",
+    "links": [{ "label": "ভাবনাগুলো পড়ুন", "url": "https://docs.google.com/document/d/1cxFTLXQh7RJetfiZ55NhurvGiezcB8rueyYzSv6U7T0/edit?usp=sharing" }],
+    "meta": { "content": "জীবনের নির্দিষ্ট কোনো মুহূর্ত নয়, বরং সেই অনিশ্চিত আবেগ, হঠাৎ ভেসে আসা চিন্তা, কিংবা মাঝরাতে নির্জনে জাগা বোধগুলোর রূপ এই সংগ্রহ। এখানে নেই পরিকল্পনা, আছে শুধু হৃদয়ের গভীর থেকে উঠে আসা কথাগুলো, লেখার ছলে ছুঁয়ে দেখা নিজের ভেতরটা।" }
+  }
+]
