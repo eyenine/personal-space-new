@@ -181,7 +181,18 @@ main { max-width: 1180px; margin: 0 auto; padding: 40px 24px 80px; }
 .cover-status .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--crimson); flex-shrink: 0; }
 .cover-desc { max-width: 60ch; color: var(--ink-soft); font-size: 16px; line-height: 1.65; margin: 4px 0 0; }
 .cover-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0 0; }
-.cover-portrait { display: none; }
+.cover-profile { margin-bottom: 0px; }
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--paper-2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+@media (max-width: 700px) {
+  .profile-img { width: 100px; height: 100px; }
+}
 
 @media (max-width: 700px) {
   .cover-band::before { right: -55%; width: 110%; }

@@ -20,6 +20,9 @@ function coverSheetPage(site, ctx) {
   return `
 <div class="cover-band">
   <section class="cover">
+    <div class="cover-profile">
+      <img src="${u('/assets/img/profile.jpg')}" alt="Profile Picture" class="profile-img" />
+    </div>
     <p class="cover-eyebrow mono">Cover Sheet: Filed ${fmtDate(currentEdu.meta.startDate)}</p>
     <h1 class="cover-title">${esc(site.name)}</h1>
     <p class="cover-line">${esc(site.identityLine)}</p>
