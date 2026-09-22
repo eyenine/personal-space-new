@@ -1,0 +1,23 @@
+[
+  {
+    "id": "lungct-net",
+    "type": "publication",
+    "title": "LungCT-NET: An Explainable Transfer Learning-Based Robust Ensemble Model for Lung Cancer Diagnosis",
+    "slug": "lungct-net",
+    "date": "2025-08-01",
+    "tags": ["Biomedical AI", "Explainable AI", "Prior Chapter"],
+    "summary": "An explainable, transfer-learning-based ensemble model for lung cancer diagnosis, published in Knowledge-Based Systems (Q1, Elsevier).",
+    "links": [{ "label": "DOI", "url": "https://doi.org/10.1016/j.knosys.2025.113854" }],
+    "meta": {
+      "authors": ["MD Zuleyenine Ibne Noman", "Kazi Sati", "Mohammad Abu Yousuf", "Saad Aloteibi", "Mohammad Ali Moni"],
+      "venue": "Knowledge-Based Systems",
+      "year": 2025,
+      "doi": "10.1016/j.knosys.2025.113854",
+      "impactFactor": "7.2",
+      "citeScore": "14.8",
+      "quartile": "Q1 (Elsevier)",
+      "abstract": "Builds on ensemble transfer-learning work for lung nodule classification, adding explainable AI so that classification decisions on CT imagery can be inspected and trusted rather than taken as a black box.",
+      "relatedResearch": ["lungct-ensemble"]
+    }
+  }
+]

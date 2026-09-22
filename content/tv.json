@@ -1,0 +1,38 @@
+[
+  {
+    "id": "breaking-bad",
+    "type": "tv",
+    "title": "Breaking Bad",
+    "sample": true,
+    "tags": ["Crime", "Drama"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "status": "Completed", "seasonsWatched": 5, "rating": 5 }
+  },
+  {
+    "id": "dark",
+    "type": "tv",
+    "title": "Dark",
+    "sample": true,
+    "tags": ["Sci-Fi", "Mystery"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "status": "Completed", "seasonsWatched": 3, "rating": 5 }
+  },
+  {
+    "id": "sherlock",
+    "type": "tv",
+    "title": "Sherlock",
+    "sample": true,
+    "tags": ["Mystery", "Crime"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "status": "Completed", "seasonsWatched": 4, "rating": 4 }
+  },
+  {
+    "id": "attack-on-titan",
+    "type": "tv",
+    "title": "Attack on Titan",
+    "sample": true,
+    "tags": ["Anime", "Action"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "status": "Completed", "seasonsWatched": 4, "rating": 5 }
+  }
+]

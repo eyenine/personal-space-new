@@ -1,0 +1,157 @@
+[
+  {
+    "id": "cybersecurity-ai-security",
+    "type": "research",
+    "chapter": "current",
+    "title": "Cybersecurity & AI Security",
+    "slug": "cybersecurity-ai-security",
+    "tags": ["Cybersecurity", "AI for Cybersecurity"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "Where machine learning meets defense, using AI to detect, explain, and get ahead of attacks rather than just react to them.",
+    "meta": {
+      "problem": "Traditional signature-based security tooling struggles against novel, fast-evolving attacks, and black-box ML detectors that do catch them are often too opaque to trust or act on.",
+      "motivation": "Coming from a background in explainable AI for medical diagnosis (see the Biomedical AI chapter below), the same instinct applies here: a detection system a security analyst can't interpret is a system they can't fully rely on.",
+      "currentWork": "Just beginning: coursework and lab onboarding with CYBER-CARE this term. This page will grow into a real research narrative as the work does.",
+      "futureDirections": "Explainable ML-based intrusion and anomaly detection; adversarial robustness of security classifiers."
+    }
+  },
+  {
+    "id": "transportation-cav-security",
+    "type": "research",
+    "chapter": "current",
+    "title": "Transportation & CAV Security",
+    "slug": "transportation-cav-security",
+    "tags": ["Transportation Cybersecurity", "CAV/V2X Security", "Intelligent Transportation Systems"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "Securing the connected and automated vehicles, V2X links, and intelligent transportation infrastructure that Houston's roads increasingly run on.",
+    "meta": {
+      "problem": "Connected and automated vehicles extend a city's attack surface onto public roads: a compromised V2X message or ITS controller isn't just a data breach, it's a physical safety risk.",
+      "motivation": "This is the core of what drew me to UH and CYBER-CARE: cybersecurity research with an immediate, physical-world stake, in a city where transportation infrastructure is actively being modernized.",
+      "currentWork": "Just beginning: reviewing the CAV/V2X security literature and identifying an initial thesis-scale problem within CYBER-CARE's transportation security agenda.",
+      "futureDirections": "Threat modeling for V2X communication; anomaly detection for connected-vehicle networks; resilience of ITS control systems under attack."
+    }
+  },
+  {
+    "id": "federated-privacy-ml",
+    "type": "research",
+    "chapter": "current",
+    "title": "Federated Learning & Privacy-Preserving ML",
+    "slug": "federated-privacy-ml",
+    "tags": ["Federated Learning", "Privacy-Preserving Machine Learning"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "Training useful models across vehicles, sensors, or institutions without ever centralizing the raw data.",
+    "meta": {
+      "problem": "Transportation and healthcare data alike are often too sensitive or too distributed to centralize, but centralization is what most ML pipelines assume.",
+      "motivation": "A natural extension of working with sensitive medical imaging data during my BSc: the privacy constraints there and in connected-vehicle telemetry rhyme more than they differ.",
+      "currentWork": "Just beginning: surveying federated learning approaches for adversarial robustness and privacy guarantees relevant to CAV and ITS data.",
+      "futureDirections": "Federated intrusion detection across vehicle fleets; differential privacy guarantees for shared transportation models."
+    }
+  },
+  {
+    "id": "post-quantum-security",
+    "type": "research",
+    "chapter": "current",
+    "title": "Post-Quantum & Quantum Cryptography",
+    "slug": "post-quantum-security",
+    "tags": ["Quantum Cryptography", "Post-Quantum Security"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "Preparing today's cryptographic infrastructure, including the systems that will secure tomorrow's connected vehicles, for a post-quantum world.",
+    "meta": {
+      "problem": "Widely deployed public-key cryptography is vulnerable to sufficiently large quantum computers, and long-lived infrastructure (transportation systems included) needs to migrate well before that threat materializes.",
+      "motivation": "A longer-horizon complement to the applied security work above: the systems being secured today need cryptographic foundations that will still hold in fifteen years.",
+      "currentWork": "Just beginning: building foundational knowledge in lattice-based and other post-quantum cryptographic schemes.",
+      "futureDirections": "Post-quantum key exchange for resource-constrained V2X devices; migration strategies for legacy transportation-security infrastructure."
+    }
+  },
+  {
+    "id": "blockchain-decentralized-security",
+    "type": "research",
+    "chapter": "current",
+    "title": "Blockchain & Decentralized Security",
+    "slug": "blockchain-decentralized-security",
+    "tags": ["Blockchain and Decentralized Security"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "Decentralized trust models for coordination between vehicles, infrastructure, and institutions that don't share a single trusted authority.",
+    "meta": {
+      "problem": "Connected-vehicle and cross-institution data sharing often needs verifiable trust without a single central authority everyone agrees to rely on.",
+      "motivation": "A natural pairing with the federated-learning thread: decentralized learning and decentralized trust are two sides of the same coordination problem.",
+      "currentWork": "Just beginning: exploring where blockchain-based trust and integrity guarantees are actually load-bearing versus where they're unnecessary overhead.",
+      "futureDirections": "Blockchain-backed integrity verification for V2X message logs; decentralized identity for connected-vehicle networks."
+    }
+  },
+  {
+    "id": "cyber-physical-systems-security",
+    "type": "research",
+    "chapter": "current",
+    "title": "Cyber-Physical Systems Security",
+    "slug": "cyber-physical-systems-security",
+    "tags": ["Cyber-Physical Systems Security"],
+    "status": "emerging",
+    "since": "Fall 2026",
+    "summary": "The connective thread across all of the above: wherever software decisions have physical-world consequences.",
+    "meta": {
+      "problem": "Cyber-physical systems fail differently than pure software systems: a bad decision doesn't just corrupt data, it can move a vehicle or misdirect infrastructure.",
+      "motivation": "The umbrella framing for the whole research direction above: every one of these threads is ultimately a cyber-physical systems security problem viewed from a different angle.",
+      "currentWork": "Just beginning, alongside the threads above, as part of onboarding with CYBER-CARE.",
+      "futureDirections": "To be defined as the more specific threads above mature."
+    }
+  },
+  {
+    "id": "lungct-ensemble",
+    "type": "research",
+    "chapter": "prior",
+    "title": "Bachelor's Thesis: Lung Nodule Classification",
+    "slug": "lung-nodule-classification",
+    "tags": ["Biomedical AI", "Explainable AI", "Prior Chapter"],
+    "status": "completed",
+    "since": "2023 – 2024",
+    "summary": "A transfer-learning ensemble for classifying lung nodules from CT images, with explainable AI layered on top, later extended into a published paper.",
+    "meta": {
+      "problem": "Lung nodule classification models are often accurate but opaque, limiting clinical trust in their output.",
+      "motivation": "An early interest in making AI decisions inspectable rather than just performant, the same instinct now carried into security research.",
+      "methods": "Transfer learning with an ensemble of pretrained CNN backbones, combined with explainable AI (XAI) techniques to surface which image regions drove each classification.",
+      "datasets": "LIDC-IDRI (Lung Image Database Consortium and Image Database Resource Initiative) CT dataset.",
+      "relatedPublications": ["lungct-net"],
+      "links": [{ "label": "Thesis document", "url": "https://drive.google.com/file/d/10TBhc_Y4pV4ft9ELGl3fuEmdZm0xucBN/view?usp=sharing" }]
+    }
+  },
+  {
+    "id": "asd-detection",
+    "type": "research",
+    "chapter": "prior",
+    "title": "UGC-Funded Project: ASD Detection",
+    "slug": "asd-detection",
+    "tags": ["Biomedical AI", "Deep Learning", "Prior Chapter"],
+    "status": "completed",
+    "since": "2023",
+    "summary": "Automated Autism Spectrum Disorder detection using a single-stage CNN, funded by the University Grants Commission.",
+    "meta": {
+      "problem": "Early ASD screening benefits from fast, accessible automated tools that can flag cases for clinical follow-up.",
+      "motivation": "Applying computer vision to a diagnostic gap with real clinical relevance in a resource-constrained setting.",
+      "methods": "YOLOv8-based single-stage CNN for detection, with dataset preprocessing to handle class imbalance.",
+      "links": [{ "label": "Code", "url": "https://github.com/eyenine/ASD-Detection" }]
+    }
+  },
+  {
+    "id": "ai-lab-lung-cancer",
+    "type": "research",
+    "chapter": "prior",
+    "title": "AI Lab Project: Lung Cancer Prediction",
+    "slug": "lung-cancer-ensemble",
+    "tags": ["Biomedical AI", "Ensemble Learning", "Prior Chapter"],
+    "status": "completed",
+    "since": "2022 – 2023",
+    "summary": "A novel ensemble learning model with a high-performance filtering stage, built for lung cancer risk prediction.",
+    "meta": {
+      "problem": "Single-model predictors can be brittle across noisy clinical data; ensembling with a strong filtering stage improves robustness.",
+      "motivation": "Groundwork that fed directly into the bachelor's thesis and eventual LungCT-NET publication.",
+      "methods": "Ensemble learning combined with a high-performance filter designed to reduce noise before classification.",
+      "links": [{ "label": "Code", "url": "https://github.com/eyenine/AI-lab-project" }]
+    }
+  }
+]

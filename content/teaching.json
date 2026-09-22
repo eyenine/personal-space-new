@@ -1,0 +1,18 @@
+[
+  {
+    "id": "teaching-research-paper",
+    "type": "teaching",
+    "title": "How to Write a Research Paper",
+    "summary": "Essential steps for academic writing, research structuring, and paper formatting.",
+    "videoId": "qCMVex2NEbU",
+    "url": "https://youtu.be/qCMVex2NEbU?si=SdLHMTUlnNNU_NKT"
+  },
+  {
+    "id": "teaching-os-fundamentals",
+    "type": "teaching",
+    "title": "Operating System Fundamentals",
+    "summary": "Fundamental operating system concepts, architecture, and core functions.",
+    "videoId": "56Zs6cEDuFg",
+    "url": "https://www.youtube.com/watch?v=56Zs6cEDuFg&t=3273s"
+  }
+]

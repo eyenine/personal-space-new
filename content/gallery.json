@@ -1,0 +1,114 @@
+[
+  {
+    "id": "barcelona-drawing",
+    "type": "gallery",
+    "title": "More Than a Club",
+    "tags": ["Drawing"],
+    "summary": "A hand-drawn tribute to FC Barcelona, intentionally designed without part of the crest to honor inclusive sensitivity, not just a logo, an idea of unity, grit, and loyalty.",
+    "media": { "kind": "image", "src": "/assets/img/barcelona logo drawing.png" }
+  },
+  {
+    "id": "eight-pointed-star",
+    "type": "gallery",
+    "title": "8-Pointed Star",
+    "tags": ["Drawing", "Sacred Geometry"],
+    "summary": "The sacred octagram: eight rays of light emanating from the center, a symbol of cosmic order and renewal.",
+    "media": { "kind": "image", "src": "/assets/img/8_pointed_star.jpg" }
+  },
+  {
+    "id": "metatrons-cube",
+    "type": "gallery",
+    "title": "Metatron's Cube",
+    "tags": ["Drawing", "Sacred Geometry"],
+    "summary": "The geometric figure containing all five Platonic solids, where sacred geometry meets spiritual architecture.",
+    "media": { "kind": "image", "src": "/assets/img/metatron's_cube.jpg" }
+  },
+  {
+    "id": "seed-of-life",
+    "type": "gallery",
+    "title": "Seed of Life & 64 Star Tetrahedron",
+    "tags": ["Drawing", "Sacred Geometry"],
+    "summary": "Seven overlapping circles forming the foundation of creation, the geometric basis for the Flower of Life pattern.",
+    "media": { "kind": "image", "src": "/assets/img/64_star_tetrahedron.jpg" }
+  },
+  {
+    "id": "sura-yasin",
+    "type": "gallery",
+    "title": "Soulful Recitation",
+    "tags": ["Audio", "Recitation"],
+    "summary": "A recitation of Sura Yasin in the early morning, embraced by the sound of heavy rain, a moment of calm intention, shared not for performance, but presence.",
+    "media": { "kind": "audio", "src": "/assets/audio/sura yasin.mp4" }
+  },
+  {
+    "id": "ami-banglay-gaan-gai",
+    "type": "gallery",
+    "title": "Small Tribute in Song",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "An unaccompanied attempt to sing \"Ami Banglay Gaan Gai\", a song that echoes identity, language, and longing.",
+    "media": { "kind": "audio", "src": "/assets/audio/ami banglay gaan gai.mp4" }
+  },
+  {
+    "id": "ahare",
+    "type": "gallery",
+    "title": "Unplugged Attempt",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "A solo, unaccompanied rendition of \"Ahare\" by Minar, interpreted with honest restraint.",
+    "media": { "kind": "audio", "src": "/assets/audio/Ahare.mp4" }
+  },
+  {
+    "id": "alada-alada",
+    "type": "gallery",
+    "title": "A Voice in Feeling",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "A humble rendition of \"Alada Alada,\" sung with emotion more than technique.",
+    "media": { "kind": "audio", "src": "/assets/audio/alada alada.mp4" }
+  },
+  {
+    "id": "amar-sharatadin",
+    "type": "gallery",
+    "title": "Rain Songs for the Soul",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "A soft attempt at \"Amar Sharatadin\", a reflection of the rhythm found in droplets and silence.",
+    "media": { "kind": "audio", "src": "/assets/audio/amar sharatadin.mp4" }
+  },
+  {
+    "id": "aynate",
+    "type": "gallery",
+    "title": "Reflections in Song",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "এই গানটার লিরিক্স অদ্ভুত সুন্দর। এক অন্য ভুবনে নিয়ে যায়।",
+    "media": { "kind": "audio", "src": "/assets/audio/aynate.mp4" }
+  },
+  {
+    "id": "amaro-porano-jaha-chay",
+    "type": "gallery",
+    "title": "Heart's Longing",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "\"আমারো পরাণ যাহা চায়\", a Tagore melody that pulls you into the depths of feeling.",
+    "media": { "kind": "audio", "src": "/assets/audio/amaro porano jaha chay.mp4" }
+  },
+  {
+    "id": "tumi-robe-nirobe",
+    "type": "gallery",
+    "title": "Silent Presence",
+    "tags": ["Audio", "Song Cover"],
+    "summary": "\"তুমি রবে নীরবে\", a Tagore melody that cools the heart, a quiet shadow of peace.",
+    "media": { "kind": "audio", "src": "/assets/audio/tumi robe nirobe.mp4" }
+  },
+  {
+    "id": "jodi-abar",
+    "type": "gallery",
+    "title": "Jodi Abar",
+    "tags": ["Video", "Song Cover"],
+    "summary": "\"যদি আবার\", a song video sung in my own voice, a special part of my heart.",
+    "media": { "kind": "video", "src": "/assets/audio/Jodi Abar.mp4" }
+  },
+  {
+    "id": "amay-dekona",
+    "type": "gallery",
+    "title": "Amay Dekona",
+    "tags": ["Video", "Song Cover"],
+    "summary": "Another song video performed in my own voice, an attempt to speak the heart's words through music.",
+    "media": { "kind": "video", "src": "/assets/audio/amay dekona.mp4" }
+  }
+]

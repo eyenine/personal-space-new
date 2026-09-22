@@ -1,0 +1,47 @@
+[
+  {
+    "id": "inception",
+    "type": "movie",
+    "title": "Inception",
+    "sample": true,
+    "tags": ["Sci-Fi", "Thriller"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "year": 2010, "genre": "Sci-Fi / Thriller", "rating": 5, "review": "Sample entry: replace with your own thoughts once you send over your real list." }
+  },
+  {
+    "id": "the-dark-knight",
+    "type": "movie",
+    "title": "The Dark Knight",
+    "sample": true,
+    "tags": ["Action", "Crime"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "year": 2008, "genre": "Action / Crime", "rating": 5 }
+  },
+  {
+    "id": "interstellar",
+    "type": "movie",
+    "title": "Interstellar",
+    "sample": true,
+    "tags": ["Sci-Fi", "Drama"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "year": 2014, "genre": "Sci-Fi / Drama", "rating": 5 }
+  },
+  {
+    "id": "parasite",
+    "type": "movie",
+    "title": "Parasite",
+    "sample": true,
+    "tags": ["Drama", "Thriller"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "year": 2019, "genre": "Drama / Thriller", "rating": 4 }
+  },
+  {
+    "id": "spirited-away",
+    "type": "movie",
+    "title": "Spirited Away",
+    "sample": true,
+    "tags": ["Animation", "Fantasy"],
+    "summary": "A placeholder entry: swap in your own watched list whenever you're ready.",
+    "meta": { "year": 2001, "genre": "Animation / Fantasy", "rating": 5 }
+  }
+]

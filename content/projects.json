@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ecommerce-system",
+    "type": "project",
+    "title": "E-commerce System",
+    "slug": "ecommerce-system",
+    "tags": ["Python", "Django", "Engineering"],
+    "summary": "A scalable e-commerce platform with product management, user authentication, and an AI-powered support chatbot.",
+    "links": [{ "label": "View Code", "url": "https://github.com/eyenine/Ecommerce" }],
+    "meta": { "category": "engineering", "stack": ["Python", "Django"] }
+  },
+  {
+    "id": "expense-tracker",
+    "type": "project",
+    "title": "Expense Tracker Mobile App",
+    "slug": "expense-tracker",
+    "tags": ["Java", "Android", "Firebase", "Engineering"],
+    "summary": "An Android financial-tracking app with real-time updates, built on Java and Google Firebase.",
+    "links": [{ "label": "View Code", "url": "https://github.com/eyenine/Expense_Tracker" }],
+    "meta": { "category": "engineering", "stack": ["Java", "Android", "Firebase"] }
+  },
+  {
+    "id": "student-management",
+    "type": "project",
+    "title": "Student Management System",
+    "slug": "student-management",
+    "tags": ["Node.js", "JavaScript", "Engineering"],
+    "summary": "A web-based student management system with dynamic data storage and retrieval.",
+    "links": [{ "label": "View Code", "url": "https://github.com/eyenine/SATS_Student_Management" }],
+    "meta": { "category": "engineering", "stack": ["Node.js", "HTML", "CSS", "JavaScript"] }
+  },
+  {
+    "id": "blood-bank-ui",
+    "type": "project",
+    "title": "Blood Bank Management System Interface",
+    "slug": "blood-bank-ui",
+    "tags": ["Figma", "UI/UX", "Engineering"],
+    "summary": "A streamlined UI/UX design for blood bank operations, prototyped in Figma.",
+    "links": [{ "label": "View Design", "url": "https://www.figma.com/design/wpzJED0lyVhoSnpEKSsPKa/SWE-LAB-PROJECT-PROTOTYPE?node-id=0-1&t=ktRsbPzrRjxxgJVD-1" }],
+    "meta": { "category": "engineering", "stack": ["Figma"] }
+  }
+]

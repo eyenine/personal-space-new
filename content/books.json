@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sapiens",
+    "type": "book",
+    "title": "Sapiens",
+    "sample": true,
+    "tags": ["Non-Fiction", "History"],
+    "summary": "A placeholder entry: swap in your own reading list whenever you're ready.",
+    "meta": { "author": "Yuval Noah Harari", "readingStatus": "Completed", "rating": 5 }
+  },
+  {
+    "id": "atomic-habits",
+    "type": "book",
+    "title": "Atomic Habits",
+    "sample": true,
+    "tags": ["Non-Fiction", "Productivity"],
+    "summary": "A placeholder entry: swap in your own reading list whenever you're ready.",
+    "meta": { "author": "James Clear", "readingStatus": "Completed", "rating": 4 }
+  },
+  {
+    "id": "deep-work",
+    "type": "book",
+    "title": "Deep Work",
+    "sample": true,
+    "tags": ["Non-Fiction", "Productivity"],
+    "summary": "A placeholder entry: swap in your own reading list whenever you're ready.",
+    "meta": { "author": "Cal Newport", "readingStatus": "Reading", "rating": null }
+  },
+  {
+    "id": "three-body-problem",
+    "type": "book",
+    "title": "The Three-Body Problem",
+    "sample": true,
+    "tags": ["Fiction", "Sci-Fi"],
+    "summary": "A placeholder entry: swap in your own reading list whenever you're ready.",
+    "meta": { "author": "Liu Cixin", "readingStatus": "Want to Read", "rating": null }
+  },
+  {
+    "id": "1984",
+    "type": "book",
+    "title": "1984",
+    "sample": true,
+    "tags": ["Fiction", "Classic"],
+    "summary": "A placeholder entry: swap in your own reading list whenever you're ready.",
+    "meta": { "author": "George Orwell", "readingStatus": "Completed", "rating": 5 }
+  }
+]

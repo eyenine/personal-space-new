@@ -1,0 +1,40 @@
+{
+  "basePath": "/Eyenine",
+  "_basePathNote": "GitHub Pages serves this repo at eyenine.github.io/Eyenine/ (a project page, not a user page), so every internal link needs this prefix. Set to \"\" if you ever rename the repo to eyenine.github.io or add a custom domain via CNAME.",
+  "name": "MD Zuleyenine Ibne Noman",
+  "handle": "eyenine",
+  "tagline": "PhD Researcher · Cybersecurity · AI · Transportation Security",
+  "identityLine": "PhD Researcher & Research Assistant, Electrical & Computer Engineering, University of Houston",
+  "status": "Active: PhD coursework began Aug 24, 2026",
+  "institution": "University of Houston",
+  "lab": "CYBER-CARE Research Environment",
+  "location": "Houston, Texas",
+  "coordinates": "29.7199°N, 95.3422°W",
+  "email": "eyenine11@gmail.com",
+  "emails": [
+    "eyenine11@gmail.com",
+    "zuleyenine.noman.iit@gmail.com",
+    "zuleyenine.stu2018@juniv.edu"
+  ],
+  "resumeUrl": "/assets/pdf/MD_Zuleyenine_Ibne_Noman_Resume.pdf",
+  "profileImage": "/assets/img/profile.jpg",
+  "social": [
+    { "label": "GitHub", "url": "https://github.com/eyenine", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/zuleyenine/", "icon": "linkedin" },
+    { "label": "X", "url": "https://x.com/zuleyenine", "icon": "twitter-x" },
+    { "label": "Kaggle", "url": "https://www.kaggle.com/zuleyenineibnenoman/code", "icon": "bar-chart-line" },
+    { "label": "YouTube", "url": "https://www.youtube.com/channel/UCcy9WqN789GaAvdXM8OSDxA", "icon": "youtube" },
+    { "label": "Facebook", "url": "https://web.facebook.com/Eyenine10/", "icon": "facebook" }
+  ],
+  "nav": [
+    { "label": "Cover Sheet", "href": "/", "id": "home" },
+    { "label": "The Transition", "href": "/transition/", "id": "transition" },
+    { "label": "Research", "href": "/research/", "id": "research" },
+    { "label": "Publications", "href": "/publications/", "id": "publications" },
+    { "label": "Projects", "href": "/projects/", "id": "projects" },
+    { "label": "Experience", "href": "/experience/", "id": "experience" },
+    { "label": "Education", "href": "/education/", "id": "education" },
+    { "label": "Off the Record", "href": "/off-the-record/", "id": "otr" },
+    { "label": "Contact", "href": "/contact/", "id": "contact" }
+  ]
+}
