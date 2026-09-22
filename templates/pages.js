@@ -24,7 +24,7 @@ function coverSheetPage(site, ctx) {
     <h1 class="cover-title">${esc(site.name)}</h1>
     <p class="cover-line">${esc(site.identityLine)}</p>
     <p class="cover-status">${esc(site.status)}<span class="dot"></span>${esc(site.lab)}</p>
-    <p class="cover-desc">Formerly a software engineer working on AI in healthcare, now researching cybersecurity, AI, and transportation security at the University of Houston, without leaving that earlier chapter behind.</p>
+    <p class="cover-desc">${esc(site.coverDesc || "Full-stack engineer (Spring Boot, React.js) with national-level project experience, combining a background in healthcare AI with advanced research in cybersecurity and transportation systems at the University of Houston. Having spent years building software from the ground up, I made the leap from shipping features to security research—driven by a curiosity for how complex systems break, how adversaries exploit them, and how to build defenses that truly hold.")}</p>
     <div class="cover-cta">
       <a class="btn btn-primary" href="${u("/research/")}">${icon("folder2-open")} Open the Research Folder</a>
       <a class="btn" href="${u(site.resumeUrl)}" download>${icon("download")} Download Résumé</a>
