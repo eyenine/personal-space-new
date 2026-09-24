@@ -82,15 +82,14 @@ function main() {
     })
   );
 
-  writePage(
-    "transition",
-    T.layout(site, {
-      title: "The Transition",
-      activeId: "transition",
-      description: "From software engineer to PhD researcher: the story so far.",
-      body: P.transitionPage(site),
-    })
-  );
+  const aboutHtml = T.layout(site, {
+    title: "About Me",
+    activeId: "transition",
+    description: "About MD Zuleyenine Ibne Noman: From software engineering to cybersecurity and AI systems research at the University of Houston.",
+    body: P.transitionPage(site),
+  });
+  writePage("transition", aboutHtml);
+  writePage("about", aboutHtml);
 
   writePage(
     "research",
@@ -155,6 +154,25 @@ function main() {
       body: P.experiencePage(site, experience, achievements, teaching),
     })
   );
+
+  writePage(
+    "achievements",
+    T.layout(site, {
+      title: "Achievements",
+      activeId: "achievements",
+      description: "Achievements and competitive machine learning recognitions.",
+      body: P.achievementsPage(site, achievements),
+    })
+  );
+
+  const contentCreationHtml = T.layout(site, {
+    title: "Educational Content Creation",
+    activeId: "content-creation",
+    description: "Educational video lectures, computer science fundamentals, and academic research paper writing guides.",
+    body: P.contentCreationPage(site, teaching),
+  });
+  writePage("educational-content", contentCreationHtml);
+  writePage("content-creation", contentCreationHtml);
 
   writePage(
     "education",
@@ -241,8 +259,9 @@ function main() {
         title: "Places",
         description: "Houston and beyond, as I explore it.",
         items: places,
-        cardRenderer: (i) => T.exhibitCard(i, {}),
+        cardRenderer: P.placeCard,
         hasSamples: false,
+        gridClass: "places-stream",
       }),
     })
   );
@@ -305,6 +324,7 @@ function main() {
     "assets/img",
     "assets/audio",
     "assets/pdf",
+    "assets/Pictures",
     "assets/vendor/bootstrap-icons",
     "assets/vendor/glightbox",
   ];
@@ -317,6 +337,38 @@ function main() {
 
   const pageCount = countHtmlFiles(OUT);
   console.log(`Built ${pageCount} pages to ${OUT}`);
+
+  if (!isLocal) {
+    const rootIndex = path.join(ROOT, "index.html");
+    const distIndex = path.join(OUT, "index.html");
+    if (fs.existsSync(distIndex)) {
+      fs.copyFileSync(distIndex, rootIndex);
+      console.log(`Synced ${rootIndex} for GitHub Pages root deployment.`);
+    }
+
+    const sections = [
+      "transition",
+      "about",
+      "research",
+      "publications",
+      "projects",
+      "experience",
+      "achievements",
+      "educational-content",
+      "content-creation",
+      "education",
+      "off-the-record",
+      "contact"
+    ];
+    for (const sec of sections) {
+      const srcDir = path.join(OUT, sec);
+      const destDir = path.join(ROOT, sec);
+      if (fs.existsSync(srcDir)) {
+        copyIfExists(srcDir, destDir);
+        console.log(`Synced ${sec}/ for GitHub Pages root deployment.`);
+      }
+    }
+  }
 }
 
 function countHtmlFiles(dir) {

@@ -31,6 +31,9 @@ const MIME_TYPES = {
   ".eot": "application/vnd.ms-fontobject",
   ".mp3": "audio/mpeg",
   ".wav": "audio/wav",
+  ".mp4": "video/mp4",
+  ".webm": "video/webm",
+  ".mov": "video/quicktime",
   ".txt": "text/plain; charset=utf-8",
 };
 
@@ -48,6 +51,13 @@ function build() {
 function handleRequest(req, res) {
   const parsedUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
+
+  // Strip GitHub Pages basePath prefix (/Eyenine) if present so prod builds also serve locally
+  if (pathname.startsWith("/Eyenine/")) {
+    pathname = pathname.substring(8); // remove "/Eyenine"
+  } else if (pathname === "/Eyenine") {
+    pathname = "/";
+  }
 
   // Normalize safe path inside DIST
   let safePath = path.normalize(path.join(DIST, pathname));
@@ -100,9 +110,30 @@ function handleRequest(req, res) {
 
     const ext = path.extname(safePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || "application/octet-stream";
+    const fileStat = fs.statSync(safePath);
+    const fileSize = fileStat.size;
+    const range = req.headers.range;
+
+    if (range && (ext === ".mp4" || ext === ".webm" || ext === ".mp3" || ext === ".wav")) {
+      const parts = range.replace(/bytes=/, "").split("-");
+      const start = parseInt(parts[0], 10);
+      const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
+      const chunkSize = end - start + 1;
+      const stream = fs.createReadStream(safePath, { start, end });
+
+      res.writeHead(206, {
+        "Content-Range": `bytes ${start}-${end}/${fileSize}`,
+        "Accept-Ranges": "bytes",
+        "Content-Length": chunkSize,
+        "Content-Type": contentType,
+      });
+      stream.pipe(res);
+      return;
+    }
 
     res.writeHead(200, {
       "Content-Type": contentType,
+      "Content-Length": fileSize,
       "Cache-Control": "no-cache, no-store, must-revalidate",
     });
 

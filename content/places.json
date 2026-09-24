@@ -1,1 +1,777 @@
-[]
+[
+  {
+    "id": "menil-collection-st-thomas",
+    "type": "place",
+    "title": "The Menil Collection & University of St. Thomas",
+    "date": "2026-09-12",
+    "location": "Montrose, Houston, TX",
+    "summary": "A peaceful walk through the historic, tree-lined Montrose neighborhood, the modern pavilion architecture of the Menil Collection campus, and the tranquil grounds of the University of St. Thomas.",
+    "tags": [
+      "Art",
+      "Architecture",
+      "Campus",
+      "Montrose",
+      "Houston"
+    ],
+    "coverImage": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142404.jpg",
+    "stats": {
+      "photoCount": 17,
+      "videoCount": 0
+    },
+    "media": [
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_115555.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_122103.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_122128.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_122140.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_141702.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142010.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142250.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142310.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142354.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142404.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_142421.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_143635.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_143909.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_143919.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_144007.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_144118.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Menil Collection and University Of St Thomas/20260912_144227.jpg",
+        "title": "The Menil Collection & University of St. Thomas - Photo"
+      }
+    ]
+  },
+  {
+    "id": "houston-zoo",
+    "type": "place",
+    "title": "Houston Zoo",
+    "date": "2026-09-05",
+    "location": "Hermann Park, Houston, TX",
+    "summary": "A weekend exploration through shaded botanical trails and diverse wildlife habitats in the heart of Hermann Park, featuring Asian elephants, big cats, primates, and reptile houses.",
+    "tags": [
+      "Wildlife",
+      "Zoo",
+      "Hermann Park",
+      "Houston",
+      "Nature"
+    ],
+    "coverImage": "/assets/Pictures/Houston Zoo/20260905_100237.jpg",
+    "stats": {
+      "photoCount": 44,
+      "videoCount": 29
+    },
+    "media": [
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_100437.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_100944.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101204.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101325.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101400.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101541.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101641.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_102708.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_103857.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_104517.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_104615.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111213.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_112041.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_113440.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_113458.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_113524.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_114717.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_115214.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120457.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120642.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120902.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120920.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120955.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_121807.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122024.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122110.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122155.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122334.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122344.mp4",
+        "title": "Houston Zoo - Video Clip"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_095545.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_095920.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_100237.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_100627.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101844.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_101903.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_103852.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_104351.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_110829.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_110832.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111210.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111327.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111338.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111412.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111537.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111539.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111649.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111704.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111729.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111755.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111839.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111847.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111857.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111900.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_111925.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_112309.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_112733.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_112911.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_113138.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_113603.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_114450.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_114653.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_114659.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_114733.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_115235.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_115634.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_115647.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_115654.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_120711.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_121943.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122016.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_122623.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_124318.jpg",
+        "title": "Houston Zoo - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Houston Zoo/20260905_124414.jpg",
+        "title": "Houston Zoo - Photo"
+      }
+    ]
+  },
+  {
+    "id": "cyber-care-lab",
+    "type": "place",
+    "title": "CYBER-CARE Research Environment",
+    "date": "2026-08-24",
+    "location": "Engineering Building 1, University of Houston",
+    "summary": "The research home for my PhD journey at the University of Houston under Dr. Aaron Ding. A state-of-the-art facility dedicated to advancing cybersecurity, edge AI, and connected & autonomous vehicle resilience.",
+    "tags": [
+      "Research",
+      "Lab",
+      "University of Houston",
+      "Cybersecurity",
+      "AI"
+    ],
+    "coverImage": "/assets/Pictures/Cyber-Care Lab/20260921_124809.jpg",
+    "stats": {
+      "photoCount": 4,
+      "videoCount": 0
+    },
+    "media": [
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Cyber-Care Lab/20260824_104949.jpg",
+        "title": "CYBER-CARE Research Environment - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Cyber-Care Lab/20260824_104952.jpg",
+        "title": "CYBER-CARE Research Environment - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Cyber-Care Lab/20260824_105907.jpg",
+        "title": "CYBER-CARE Research Environment - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Cyber-Care Lab/20260921_124809.jpg",
+        "title": "CYBER-CARE Research Environment - Photo"
+      }
+    ]
+  },
+  {
+    "id": "water-wall",
+    "type": "place",
+    "title": "Gerald D. Hines Waterwall Park",
+    "date": "2026-08-23",
+    "location": "Uptown / Galleria District, Houston, TX",
+    "summary": "Standing before the monumental 64-foot sculptural fountain in Uptown Houston. Cascading sheets of water rush down concave granite walls amidst towering live oaks, creating a refreshing mist and a powerful acoustic roar.",
+    "tags": [
+      "Architecture",
+      "Landmark",
+      "Uptown",
+      "Galleria",
+      "Houston"
+    ],
+    "coverImage": "/assets/Pictures/Water Wall/20260823_113430.jpg",
+    "stats": {
+      "photoCount": 5,
+      "videoCount": 5
+    },
+    "media": [
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Water Wall/20260823_112332.mp4",
+        "title": "Gerald D. Hines Waterwall Park - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Water Wall/20260823_112433.mp4",
+        "title": "Gerald D. Hines Waterwall Park - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Water Wall/20260823_112839.mp4",
+        "title": "Gerald D. Hines Waterwall Park - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Water Wall/20260823_112954.mp4",
+        "title": "Gerald D. Hines Waterwall Park - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Water Wall/20260823_113241.mp4",
+        "title": "Gerald D. Hines Waterwall Park - Video Clip"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Water Wall/20260823_112859.jpg",
+        "title": "Gerald D. Hines Waterwall Park - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Water Wall/20260823_113224.jpg",
+        "title": "Gerald D. Hines Waterwall Park - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Water Wall/20260823_113430.jpg",
+        "title": "Gerald D. Hines Waterwall Park - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Water Wall/20260823_115516.jpg",
+        "title": "Gerald D. Hines Waterwall Park - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Water Wall/20260823_122641.jpg",
+        "title": "Gerald D. Hines Waterwall Park - Photo"
+      }
+    ]
+  },
+  {
+    "id": "hermann-park",
+    "type": "place",
+    "title": "Hermann Park & McGovern Centennial Gardens",
+    "date": "2026-08-16",
+    "location": "Museum District / Medical Center, Houston, TX",
+    "summary": "One of Houston's premier historic public parks, featuring expansive reflection ponds, the Sam Houston monument, tranquil walking bridges, and scenic green lawns connecting the Museum District and the Texas Medical Center.",
+    "tags": [
+      "Park",
+      "Nature",
+      "Museum District",
+      "Houston",
+      "Landmark"
+    ],
+    "coverImage": "/assets/Pictures/Hermann Park/20260816_130119.jpg",
+    "stats": {
+      "photoCount": 25,
+      "videoCount": 4
+    },
+    "media": [
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Hermann Park/20260816_130205.mp4",
+        "title": "Hermann Park & McGovern Centennial Gardens - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Hermann Park/20260816_130923.mp4",
+        "title": "Hermann Park & McGovern Centennial Gardens - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Hermann Park/20260816_133217.mp4",
+        "title": "Hermann Park & McGovern Centennial Gardens - Video Clip"
+      },
+      {
+        "kind": "video",
+        "src": "/assets/Pictures/Hermann Park/20260816_133224.mp4",
+        "title": "Hermann Park & McGovern Centennial Gardens - Video Clip"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_124759.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130119.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130202.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130255.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130714.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130828.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_130846.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_131221.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_131421.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_131918.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_131957.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_132036.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_132423.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_132736.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_132915.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_132950.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_133123.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_133457.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_133511.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_133854.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_134226.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_134641.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_135153.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_135200.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      },
+      {
+        "kind": "image",
+        "src": "/assets/Pictures/Hermann Park/20260816_142223.jpg",
+        "title": "Hermann Park & McGovern Centennial Gardens - Photo"
+      }
+    ]
+  }
+]

@@ -9,15 +9,6 @@
     "meta": { "org": "University of Houston", "startDate": "2026-08-24", "current": true }
   },
   {
-    "id": "msc-iit-ju",
-    "type": "education",
-    "title": "Master of Science in ICT",
-    "slug": "msc-iit-ju",
-    "tags": ["Jahangirnagar University"],
-    "summary": "In progress, Institute of Information Technology, Jahangirnagar University.",
-    "meta": { "org": "Institute of Information Technology, Jahangirnagar University", "startDate": "2024", "endDate": "2026", "current": true }
-  },
-  {
     "id": "bsc-iit-ju",
     "type": "education",
     "title": "Bachelor of Science in ICT",

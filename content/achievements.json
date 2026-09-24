@@ -5,9 +5,23 @@
     "title": "Zelestra × AWS ML Ascend Challenge: 2nd Edition",
     "slug": "zelestra-aws-ml-ascend",
     "date": "2025",
-    "tags": ["Machine Learning", "Competition"],
+    "recognition": "2025 · Recognition",
+    "rank": "85th of 1,016 teams",
+    "team": "Team_IIT_JU",
+    "tags": ["Machine Learning", "Solar Energy Forecasting", "Competition", "AWS"],
     "summary": "85th of 1,016 teams (Team_IIT_JU), in a 14-day AI-driven solar energy forecasting and optimization challenge.",
-    "links": [{ "label": "Leaderboard", "url": "https://www.hackerearth.com/challenges/competitive/zelestra-x-aws-ml-ascend-challenge-second-edition/leaderboard/page/2/" }],
-    "meta": { "teammate": "Akmol Masud Ayon", "focus": "AI-driven solar energy forecasting & optimization" }
+    "links": [
+      {
+        "label": "Leaderboard",
+        "url": "https://www.hackerearth.com/challenges/competitive/zelestra-x-aws-ml-ascend-challenge-second-edition/leaderboard/page/2/"
+      }
+    ],
+    "meta": {
+      "teammate": "Akmol Masud Ayon",
+      "focus": "AI-driven solar energy forecasting & optimization",
+      "organizer": "Zelestra & Amazon Web Services (AWS)",
+      "platform": "HackerEarth",
+      "duration": "14-day challenge"
+    }
   }
 ]

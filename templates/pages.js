@@ -17,21 +17,33 @@ function fmtDate(d) {
 function coverSheetPage(site, ctx) {
   const { currentResearch, latestPub, currentRole, currentEdu, latestJournal } = ctx;
   const youtube = site.social.find((s) => s.label === "YouTube");
+  const profileImg = site.profileImage || "/assets/img/profile.jpg";
   return `
 <div class="cover-band">
   <section class="cover">
-    <div class="cover-profile">
-      <img src="${u('/assets/img/profile.jpg')}" alt="Profile Picture" class="profile-img" />
-    </div>
-    <p class="cover-eyebrow mono">Cover Sheet: Filed ${fmtDate(currentEdu.meta.startDate)}</p>
-    <h1 class="cover-title">${esc(site.name)}</h1>
-    <p class="cover-line">${esc(site.identityLine)}</p>
-    <p class="cover-status">${esc(site.status)}<span class="dot"></span>${esc(site.lab)}</p>
-    <p class="cover-desc">${esc(site.coverDesc || "Full-stack engineer (Spring Boot, React.js) with national-level project experience, combining a background in healthcare AI with advanced research in cybersecurity and transportation systems at the University of Houston. Having spent years building software from the ground up, I made the leap from shipping features to security research—driven by a curiosity for how complex systems break, how adversaries exploit them, and how to build defenses that truly hold.")}</p>
-    <div class="cover-cta">
-      <a class="btn btn-primary" href="${u("/research/")}">${icon("folder2-open")} Open the Research Folder</a>
-      <a class="btn" href="${u(site.resumeUrl)}" download>${icon("download")} Download Résumé</a>
-      ${youtube ? `<a class="btn btn-youtube" href="${esc(youtube.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch on YouTube</a>` : ""}
+    <div class="cover-grid">
+      <div class="cover-main">
+        <p class="cover-eyebrow mono">Cover Sheet: Filed ${fmtDate(currentEdu.meta.startDate)}</p>
+        <h1 class="cover-title">${esc(site.name)}</h1>
+        <p class="cover-line">${esc(site.identityLine)}</p>
+        <p class="cover-status">${esc(site.status)}<span class="dot"></span>${esc(site.lab)}</p>
+        <p class="cover-desc">${esc(site.coverDesc || "Former full-stack engineer (Spring Boot, React.js) on national-scale and had research experience healthcare AI systems, now transitioned into full-time research in cybersecurity, AI, and transportation security at the University of Houston. I leverage my production development background to understand how complex systems break and design stronger defenses against adversaries.")}</p>
+        <div class="cover-cta">
+          <a class="btn btn-primary" href="${u("/research/")}">${icon("folder2-open")} Open the Research Folder</a>
+          <a class="btn" href="${u(site.resumeUrl)}" download>${icon("download")} Download CV</a>
+          ${youtube ? `<a class="btn btn-youtube" href="${esc(youtube.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch my YouTube channel</a>` : ""}
+        </div>
+      </div>
+      <div class="cover-portrait-area">
+        <div class="cover-portrait-card">
+          <div class="cover-portrait-frame">
+            <img src="${u(profileImg)}" alt="${esc(site.name)}" class="cover-portrait-img" width="250" height="250">
+          </div>
+          <div class="cover-portrait-caption mono">
+            <span class="status-indicator"></span> Active Researcher · UH
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -81,18 +93,207 @@ function coverSheetPage(site, ctx) {
 // ---------------------------------------------------------------------------
 function transitionPage(site) {
   return `
-<section class="folder-head">
-  ${eyebrow("The Transition")}
-  <h1>From Mirpur to the CYBER-CARE lab</h1>
+<section class="folder-head about-folder-head">
+  <div class="folder-head-inner">
+    ${eyebrow("University of Houston · PhD Researcher Dossier")}
+    <h1 class="about-hero-title">About Me</h1>
+    <p class="folder-desc about-hero-subtitle">From Mirpur to Houston: The engineering foundation, the turn to security research, and the principles that stay constant.</p>
+    <div class="about-meta-strip mono">
+      <span class="about-meta-item"><i class="bi bi-geo-alt"></i> Houston, TX (ex-Dhaka)</span>
+      <span class="about-meta-item"><i class="bi bi-mortarboard"></i> University of Houston · ECE PhD</span>
+      <span class="about-meta-item"><i class="bi bi-shield-check"></i> CYBER-CARE Lab</span>
+      <span class="about-meta-item"><i class="bi bi-terminal"></i> Ex-Synesis IT SWE</span>
+    </div>
+  </div>
 </section>
-<div class="prose">
-  <p>I was born in Jessore CMH, grew up between Jessore and Ghatail, and settled in Mirpur, Dhaka, where I lived for nearly two decades. Mirpur has its own charm, the lively crowd and urban energy, though I've often found myself longing for more greenery and water bodies. Some of that longing is probably why Houston's bayous already feel like a small relief.</p>
-  <h2>Software engineer, first</h2>
-  <p>My BSc in ICT at the Institute of Information Technology, Jahangirnagar University, pointed me toward applied AI in healthcare: a transfer-learning ensemble for lung nodule classification, an autism-detection project funded by the University Grants Commission, and eventually a published paper, LungCT-NET, layering explainable AI on top of that earlier work. Alongside that, I was building software professionally: an e-commerce platform, a mobile expense tracker, a student management system, the ordinary, useful work of a software engineer, which I still do as a Software Engineer I at Synesis IT Ltd.</p>
-  <h2>Why the PhD, why cybersecurity</h2>
-  <p>The thread that connects the lung-imaging work to what I'm doing now isn't the subject matter; it's the question underneath it: can a system's decision be trusted, inspected, explained? In medical imaging that question is about a radiologist trusting a model. In cybersecurity, especially in connected and automated vehicles, where a bad decision has a physical consequence on a real road, the stakes of that same question go up considerably. That's what brought me to the University of Houston's Electrical & Computer Engineering PhD program and the CYBER-CARE research environment, starting August 2026.</p>
-  <h2>What doesn't change</h2>
-  <p>I still walk toward 10,000 steps a day, still think restful sleep is underrated, and still try to treat people with the same simplicity and kindness I was raised on. The research changes. The rest of it, the songs I sing badly and mean every word of, the geometry I draw for no reason, the four in the morning thoughts I write down, that's all still here too, in <a href="${u("/off-the-record/")}">Off the Record</a>.</p>
+
+<div class="about-body">
+  <!-- Roots & Geography -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">01 / ROOTS &amp; GEOGRAPHY</span>
+      <h2>Between two worlds: Mirpur's energy to Houston's bayous</h2>
+    </div>
+    <div class="chapter-content">
+      <p>I was born in Jessore CMH and spent my childhood between Jessore and Ghatail before my family eventually settled in Mirpur, Dhaka. Mirpur was home for nearly two decades. It is busy, crowded, energetic, and unmistakably urban. I grew up loving parts of that energy while also constantly wishing there were a few more trees, open spaces, and places to sit beside the water.</p>
+      <p>Maybe that is why, after moving to Houston, I quickly found myself drawn to its parks, trails, and bayous. I still enjoy cities, but I have learned that I am happiest when there is some greenery and water nearby.</p>
+    </div>
+  </article>
+
+  <!-- From curiosity to research -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">02 / UNDERGRADUATE FOUNDATIONS</span>
+      <h2>From curiosity to research</h2>
+    </div>
+    <div class="chapter-content">
+      <p>My path into research did not begin with cybersecurity.</p>
+      <p>I studied Information and Communication Technology at the Institute of Information Technology, Jahangirnagar University. During my undergraduate years, I became increasingly interested in machine learning, computer vision, and the broader question of how we can build intelligent systems that people can actually trust.</p>
+      <p>That curiosity eventually became my undergraduate thesis on explainable deep learning for lung cancer diagnosis using CT images. I spent about a year working with the LIDC-IDRI dataset, experimenting with transfer learning, ensemble models, preprocessing pipelines, and explainability techniques such as Grad-CAM.</p>
+
+      <div class="about-feature-box">
+        <div class="feature-box-top mono">
+          <span class="feature-tag tag mono">Featured First-Author Paper</span>
+          <span class="feature-venue">Knowledge-Based Systems (Elsevier)</span>
+        </div>
+        <h3 class="feature-box-title">LungCT-NET: An Explainable Transfer Learning-Based Robust Ensemble Model for Lung Cancer Diagnosis</h3>
+        <p class="feature-box-desc">Developed an explainable deep ensemble framework combining transfer learning architectures with Grad-CAM visualization on the LIDC-IDRI dataset for verifiable pulmonary nodule diagnosis.</p>
+        <div class="feature-box-cta">
+          <a class="btn btn-sm" href="${u("/publications/lungct-net/")}"><i class="bi bi-file-earmark-text"></i> Read Publication Case File</a>
+        </div>
+      </div>
+
+      <p>The publication mattered to me, but the process mattered more. Research taught me that progress is rarely a straight line. Experiments fail. Code breaks. Results contradict what you expected. Sometimes an idea that looked brilliant on paper simply does not work.</p>
+      <p class="about-highlight-p">And then, occasionally, something does.</p>
+      <p>I discovered that I genuinely enjoyed that process.</p>
+    </div>
+  </article>
+
+  <!-- Software engineer, first -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">03 / INDUSTRY &amp; SCALE</span>
+      <h2>Software engineer, first</h2>
+    </div>
+    <div class="chapter-content">
+      <p>After completing my bachelor's degree, I joined <strong>Synesis IT</strong> as a software engineer.</p>
+      <p>That experience changed the way I thought about computing.</p>
+      <p>I was no longer building something primarily for an assignment or an experiment. I was working with large databases and nationally significant digital systems involving identity, subscriber, and device information. Systems such as <strong>CBVMP</strong> and <strong>NEIR</strong> made security feel much less theoretical.</p>
+      
+      <div class="about-quote-card">
+        <p class="quote-text">&ldquo;When a system operates at national scale, a seemingly small engineering decision can have consequences for a very large number of people.&rdquo;</p>
+      </div>
+
+      <p>That experience pushed me toward questions that increasingly interested me:</p>
+      <ul class="about-questions-list">
+        <li><strong>System Resilience:</strong> How do we design systems that remain trustworthy under attack?</li>
+        <li><strong>Anomaly Detection:</strong> How do we detect when something has gone wrong before disaster strikes?</li>
+        <li><strong>Data Protection:</strong> How do we protect sensitive information without making systems unusable?</li>
+        <li><strong>AI Trustworthiness:</strong> And, as AI becomes embedded into critical infrastructure, how do we know when an intelligent system itself can be trusted?</li>
+      </ul>
+      <p>Those questions eventually brought me back to research.</p>
+    </div>
+  </article>
+
+  <!-- Why cybersecurity -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">04 / THE TRANSITION &amp; THE UH CHAPTER</span>
+      <h2>Why cybersecurity</h2>
+    </div>
+    <div class="chapter-content">
+      <p>At first glance, lung CT images and cybersecurity do not have much in common.</p>
+      <p>For me, however, there is a thread connecting them.</p>
+
+      <div class="about-central-thesis">
+        <span class="thesis-label mono">The Central Question</span>
+        <h3 class="thesis-statement">Can we trust the system making the decision?</h3>
+      </div>
+
+      <p>In medical imaging, that might mean understanding why a neural network classified a CT scan in a particular way and whether a doctor should trust that prediction.</p>
+      <p>In cybersecurity, the same fundamental question appears in a much more adversarial environment. The system may be operating while someone is deliberately trying to deceive, manipulate, poison, or compromise it.</p>
+      <p>And when those systems control connected vehicles, transportation infrastructure, communication networks, or other cyber-physical systems, a wrong decision does not necessarily remain inside a computer. It can have consequences in the physical world.</p>
+      <p>That is the direction that ultimately brought me to the <strong>University of Houston</strong>, where I began my PhD in Electrical and Computer Engineering in 2026.</p>
+
+      <p>My research interests now sit broadly at the intersection of <strong>cybersecurity and intelligent systems</strong>:</p>
+      <div class="about-research-pills">
+        <span class="uh-pill">AI/ML Security</span>
+        <span class="uh-pill">Federated Learning Security</span>
+        <span class="uh-pill">Cyber-Physical &amp; Transportation Security</span>
+        <span class="uh-pill">Privacy-Preserving Systems</span>
+        <span class="uh-pill">Post-Quantum &amp; Quantum Cybersecurity</span>
+      </div>
+
+      <p>I am especially interested in research that connects theory with systems that can actually be built, attacked, tested, measured, and improved.</p>
+    </div>
+  </article>
+
+  <!-- The kind of researcher I want to become -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">05 / PHILOSOPHY &amp; VISION</span>
+      <h2>The kind of researcher I want to become</h2>
+    </div>
+    <div class="chapter-content">
+      <p>I do not want my understanding of cybersecurity to exist only in papers.</p>
+      <p>Alongside my PhD research, I am deliberately developing practical security skills: networking, operating-system security, SOC and detection engineering, penetration testing, web security, incident response, cloud security, and offensive and defensive security techniques.</p>
+
+      <div class="about-triad-grid">
+        <div class="triad-card">
+          <div class="triad-icon"><i class="bi bi-search"></i></div>
+          <div class="triad-tag mono">Research</div>
+          <p class="triad-desc">Tells me <strong>why</strong> a problem matters.</p>
+        </div>
+        <div class="triad-card">
+          <div class="triad-icon"><i class="bi bi-code-slash"></i></div>
+          <div class="triad-tag mono">Engineering</div>
+          <p class="triad-desc">Teaches me <strong>how</strong> systems are actually built.</p>
+        </div>
+        <div class="triad-card triad-card-accent">
+          <div class="triad-icon"><i class="bi bi-shield-slash"></i></div>
+          <div class="triad-tag mono">Security</div>
+          <p class="triad-desc">Teaches me <strong>how they fail</strong>.</p>
+        </div>
+      </div>
+
+      <p class="triad-summary">I want my work to exist somewhere in the intersection of all three.</p>
+
+      <p>In the long run, I hope to work as a researcher and educator, contributing to security problems where artificial intelligence, distributed systems, critical infrastructure, and emerging technologies meet. Whatever particular research problems I end up pursuing, I want the work to remain grounded in one principle: <strong>technology becomes valuable only when people can depend on it.</strong></p>
+    </div>
+  </article>
+
+  <!-- Outside the lab -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">06 / LIFE &amp; BALANCE</span>
+      <h2>Outside the lab</h2>
+    </div>
+    <div class="chapter-content">
+      <p>Research occupies a large part of my life, but I try not to let it become all of it.</p>
+      <p>I read a lot, particularly thrillers, fiction, and fantasy. I love movies and television, especially stories involving action, history, science fiction, and the occasional romance. Football has been part of my life for years, and I am a Barcelona supporter.</p>
+      <p>I also enjoy drawing geometric patterns. There is something strangely satisfying about starting with a few lines and watching symmetry emerge from them.</p>
+      <p>Cooking is another small pleasure, particularly experimenting with vegetarian dishes. My music is usually on the quieter side: soft, relaxing songs that work equally well during a late-night thought or a long walk.</p>
+      <p>And I walk a lot. Ten thousand steps is less of a fitness target now and more of a daily ritual.</p>
+      
+      <div class="about-interests-grid">
+        <div class="interest-chip"><i class="bi bi-book"></i> Thrillers, fiction &amp; fantasy reading</div>
+        <div class="interest-chip"><i class="bi bi-film"></i> Action, history &amp; sci-fi cinema</div>
+        <div class="interest-chip"><i class="bi bi-trophy"></i> Passionate FC Barcelona supporter</div>
+        <div class="interest-chip"><i class="bi bi-bezier2"></i> Geometric pattern drawing &amp; symmetry</div>
+        <div class="interest-chip"><i class="bi bi-egg-fried"></i> Experimenting with vegetarian cooking</div>
+        <div class="interest-chip"><i class="bi bi-music-note-beamed"></i> Soft, relaxing ambient songs</div>
+        <div class="interest-chip"><i class="bi bi-activity"></i> Daily 10,000 steps walking ritual</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- What doesn't change -->
+  <article class="about-chapter">
+    <div class="chapter-header">
+      <span class="chapter-num mono">07 / CONSTANTS</span>
+      <h2>What doesn't change</h2>
+    </div>
+    <div class="chapter-content">
+      <p>I am fairly disciplined about the ordinary things.</p>
+      <p>I prefer waking up early and sleeping early. I like walking and running more than complicated workout routines. I have gone without added sugar for almost two years, including in my coffee, although I still enjoy good food far too much to pretend I am a nutritionist.</p>
+      <p>I value sleep more than I used to. I like greenery, quiet spaces, and being near water. Given a choice between a packed venue and a peaceful walk, I will probably choose the walk. I do not smoke or drink, and I try to maintain a life where health, work, curiosity, and rest can coexist rather than compete with one another.</p>
+      <p>Moving from Bangladesh to the United States changed a great deal around me. The research changed. The problems became harder. The ambitions became larger.</p>
+      
+      <div class="about-unmoved-block">
+        <p class="unmoved-lead">Some things did not change.</p>
+        <p>I still draw geometric patterns for no particular reason. I still sing songs badly but mean every word. I still stop to photograph places that feel peaceful. And I still occasionally find myself awake with an idea that seems important enough to write down before morning.</p>
+      </div>
+
+      <div class="about-otr-invitation">
+        <div class="otr-invitation-body">
+          <p class="mono otr-badge">ARCHIVE // BEYOND THE CV</p>
+          <h3>Those parts do not belong on my research CV.</h3>
+          <p class="otr-sub">So I keep them <strong>Off the Record</strong>.</p>
+          <a class="btn btn-primary" href="${u("/off-the-record/")}"><i class="bi bi-arrow-right-circle"></i> Explore Off the Record</a>
+        </div>
+      </div>
+    </div>
+  </article>
 </div>
 `;
 }
@@ -225,37 +426,151 @@ function experiencePage(site, experience, achievements, teaching) {
       </li>`
     )
     .join("");
-  const achievementItems = achievements
+
+  const achievementCards = achievements
     .map(
-      (a) => `<li class="timeline-item timeline-marker">
-        <div class="timeline-dot timeline-dot-marker"></div>
-        <div class="timeline-body">
-          <p class="timeline-date mono">${esc(a.date)} · ${icon("trophy")} Recognition</p>
-          <h3>${esc(a.title)}</h3>
-          <p>${esc(a.summary)}</p>
-          ${linkList(a.links)}
+      (a) => `<div class="achieve-card">
+        <div class="achieve-card-header">
+          <div class="achieve-badge-wrap">
+            <span class="achieve-badge mono">${icon("trophy")} ${esc(a.recognition || a.date + " · Recognition")}</span>
+            ${a.rank ? `<span class="achieve-rank-pill mono">${esc(a.rank)}</span>` : ""}
+          </div>
+          <span class="achieve-year mono">${esc(a.date)}</span>
         </div>
-      </li>`
+        <h3 class="achieve-title">${esc(a.title)}</h3>
+        <p class="achieve-summary">${esc(a.summary)}</p>
+        ${a.meta && a.meta.teammate ? `<p class="achieve-meta mono"><span>Team:</span> ${esc(a.team || "Team_IIT_JU")} (with ${esc(a.meta.teammate)})</p>` : ""}
+        ${chips(a.tags)}
+        <div class="achieve-links">
+          ${(a.links || []).map(l => `<a class="btn btn-primary" href="${esc(l.url)}" target="_blank" rel="noopener">${icon("box-arrow-up-right")} ${esc(l.label)}</a>`).join("")}
+        </div>
+      </div>`
     )
     .join("");
+
+  const youtube = site.social.find((s) => s.label === "YouTube");
+
   const teachingItems = teaching
     .map(
       (t) => `<div class="teach-card">
         <div class="ratio-16x9"><iframe src="https://www.youtube.com/embed/${esc(t.videoId)}" title="${esc(t.title)}" loading="lazy" allowfullscreen></iframe></div>
-        <h4>${esc(t.title)}</h4>
-        <p>${esc(t.summary)}</p>
-        <a class="btn" href="${esc(t.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch</a>
+        <div class="teach-content">
+          <h4>${esc(t.title)}</h4>
+          <p>${esc(t.summary)}</p>
+          <div class="teach-footer">
+            <a class="btn btn-youtube" href="${esc(t.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch Lecture</a>
+          </div>
+        </div>
       </div>`
     )
     .join("");
+
   return `
 <section class="folder-head">
-  ${eyebrow("Experience")}
-  <h1>Software engineer to research assistant</h1>
+  ${eyebrow("Experience & Milestones")}
+  <h1>Engineering, Research &amp; Outreach</h1>
+  <p class="folder-desc">From national-scale software engineering to cybersecurity research at the University of Houston, competitive machine learning recognitions, and educational technical outreach.</p>
+  <div class="subnav-pills">
+    <a href="#experience" class="subnav-pill">${icon("briefcase")} Experience</a>
+    <a href="#achievements" class="subnav-pill">${icon("trophy")} Achievements</a>
+    <a href="#content-creation" class="subnav-pill">${icon("camera-video")} Educational Content Creation</a>
+  </div>
 </section>
-<ul class="timeline">${items}${achievementItems}</ul>
-<h2 class="section-label mono">Teaching &amp; Outreach</h2>
-<div class="teach-grid">${teachingItems}</div>
+
+<section id="experience" class="exp-section">
+  <div class="section-title-bar">
+    <div>
+      <h2 class="section-label mono">${icon("briefcase")} Work &amp; Research Experience</h2>
+    </div>
+    <span class="section-counter mono">${experience.length} positions</span>
+  </div>
+  <ul class="timeline">${items}</ul>
+</section>
+
+<section id="achievements" class="exp-section">
+  <div class="section-title-bar">
+    <div>
+      <h2 class="section-label mono">${icon("trophy")} Achievements &amp; Recognition</h2>
+      <p class="section-subtext">Competitive AI/ML challenges, national benchmarks, and optimization challenges.</p>
+    </div>
+    <span class="section-counter mono">${achievements.length} filed</span>
+  </div>
+  <div class="achieve-grid">${achievementCards}</div>
+</section>
+
+<section id="content-creation" class="exp-section">
+  <div class="section-title-bar">
+    <div>
+      <h2 class="section-label mono">${icon("camera-video")} Educational Content Creation</h2>
+      <p class="section-subtext">Technical lectures, operating system fundamentals, and research paper writing guides created for students and developers.</p>
+    </div>
+    ${youtube ? `<a class="btn btn-youtube" href="${esc(youtube.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch on YouTube Channel</a>` : ""}
+  </div>
+  <div class="teach-grid">${teachingItems}</div>
+</section>
+`;
+}
+
+function achievementsPage(site, achievements) {
+  const achievementCards = achievements
+    .map(
+      (a) => `<div class="achieve-card">
+        <div class="achieve-card-header">
+          <div class="achieve-badge-wrap">
+            <span class="achieve-badge mono">${icon("trophy")} ${esc(a.recognition || a.date + " · Recognition")}</span>
+            ${a.rank ? `<span class="achieve-rank-pill mono">${esc(a.rank)}</span>` : ""}
+          </div>
+          <span class="achieve-year mono">${esc(a.date)}</span>
+        </div>
+        <h3 class="achieve-title">${esc(a.title)}</h3>
+        <p class="achieve-summary">${esc(a.summary)}</p>
+        ${a.meta && a.meta.teammate ? `<p class="achieve-meta mono"><span>Team:</span> ${esc(a.team || "Team_IIT_JU")} (with ${esc(a.meta.teammate)})</p>` : ""}
+        ${chips(a.tags)}
+        <div class="achieve-links">
+          ${(a.links || []).map(l => `<a class="btn btn-primary" href="${esc(l.url)}" target="_blank" rel="noopener">${icon("box-arrow-up-right")} ${esc(l.label)}</a>`).join("")}
+        </div>
+      </div>`
+    )
+    .join("");
+
+  return `
+<section class="folder-head">
+  ${eyebrow("Honors & Awards")}
+  <h1>Achievements &amp; Recognition</h1>
+  <p class="folder-desc">Competitive machine learning challenges, optimization contests, and academic benchmarks.</p>
+</section>
+<div class="achieve-grid">${achievementCards}</div>
+`;
+}
+
+// ---------------------------------------------------------------------------
+// Educational Content Creation
+// ---------------------------------------------------------------------------
+function contentCreationPage(site, teaching) {
+  const youtube = site.social.find((s) => s.label === "YouTube");
+  const teachingItems = teaching
+    .map(
+      (t) => `<div class="teach-card">
+        <div class="ratio-16x9"><iframe src="https://www.youtube.com/embed/${esc(t.videoId)}" title="${esc(t.title)}" loading="lazy" allowfullscreen></iframe></div>
+        <div class="teach-content">
+          <h4>${esc(t.title)}</h4>
+          <p>${esc(t.summary)}</p>
+          <div class="teach-footer">
+            <a class="btn btn-youtube" href="${esc(t.url)}" target="_blank" rel="noopener">${icon("youtube")} Watch Lecture</a>
+          </div>
+        </div>
+      </div>`
+    )
+    .join("");
+
+  return `
+<section class="folder-head">
+  ${eyebrow("Outreach & Technical Mentorship")}
+  <h1>Educational Content Creation</h1>
+  <p class="folder-desc">Structured video tutorials, computer science fundamentals, and academic research writing guides to support students and developers.</p>
+  ${youtube ? `<div style="margin-top: 16px;"><a class="btn btn-youtube" href="${esc(youtube.url)}" target="_blank" rel="noopener">${icon("youtube")} Visit YouTube Channel</a></div>` : ""}
+</section>
+<div class="teach-grid" style="margin-top: 24px;">${teachingItems}</div>
 `;
 }
 
@@ -271,15 +586,17 @@ function educationPage(site, education) {
           <p class="timeline-date mono">${e.meta.startDate}${e.meta.endDate ? " – " + e.meta.endDate : e.meta.current ? " – Present" : ""}</p>
           <h3>${esc(e.title)}</h3>
           <p class="timeline-org">${esc(e.meta.org)}</p>
-          ${e.meta.gpa ? `<p class="mono">CGPA: ${esc(e.meta.gpa)}</p>` : ""}
+          <p class="timeline-desc">${esc(e.summary)}</p>
+          ${e.meta.gpa ? `<p class="mono timeline-gpa">CGPA: ${esc(e.meta.gpa)}</p>` : ""}
         </div>
       </li>`
     )
     .join("");
   return `
 <section class="folder-head">
-  ${eyebrow("Education")}
-  <h1>Jahangirnagar to Houston</h1>
+  ${eyebrow("Academic Background")}
+  <h1>Education</h1>
+  <p class="folder-desc">Academic training from Jahangirnagar University to the University of Houston.</p>
 </section>
 <ul class="timeline">${items}</ul>
 `;
@@ -318,7 +635,7 @@ function offTheRecordHubPage(site, counts) {
 `;
 }
 
-function otrListPage(site, { title, description, items, cardRenderer, hasSamples }) {
+function otrListPage(site, { title, description, items, cardRenderer, hasSamples, gridClass = "exhibit-grid" }) {
   return `
 ${backlink("/off-the-record/", "Off the Record")}
 <section class="folder-head">
@@ -327,7 +644,7 @@ ${backlink("/off-the-record/", "Off the Record")}
   <p class="folder-desc">${esc(description)}</p>
 </section>
 ${hasSamples ? `<div class="callout">These are sample entries so the section isn't empty: send over your real list whenever you're ready and I'll swap them in.</div>` : ""}
-${items.length ? grid(items, cardRenderer) : `<p class="empty-state">Nothing filed here yet.</p>`}
+${items.length ? grid(items, cardRenderer, gridClass) : `<p class="empty-state">Nothing filed here yet.</p>`}
 `;
 }
 
@@ -371,6 +688,79 @@ function galleryCard(item) {
   </div>`;
 }
 
+function placeCard(item) {
+  const videos = (item.media || []).filter((m) => m.kind === "video");
+  const photos = (item.media || []).filter((m) => m.kind === "image");
+
+  const videoSection = videos.length
+    ? `<div class="place-media-section">
+        <div class="place-media-head">
+          <h4 class="mono">${icon("camera-video")} Video Highlights</h4>
+          <span class="mono place-media-count">${videos.length} clips</span>
+        </div>
+        <div class="place-video-grid">
+          ${videos
+            .map(
+              (v, idx) => `
+            <div class="place-video-item">
+              <div class="place-video-frame">
+                <video controls preload="none" playsinline src="${u(v.src)}"></video>
+              </div>
+              <div class="place-video-caption mono">
+                <span class="place-clip-tag">Clip ${idx + 1}</span>
+                <span class="place-clip-name">${esc(v.src.split("/").pop().replace(/\.[^.]+$/, ""))}</span>
+              </div>
+            </div>`
+            )
+            .join("")}
+        </div>
+      </div>`
+    : "";
+
+  const photoSection = photos.length
+    ? `<div class="place-media-section">
+        <div class="place-media-head">
+          <h4 class="mono">${icon("images")} Photo Gallery</h4>
+          <span class="mono place-media-count">${photos.length} photos · click any to expand</span>
+        </div>
+        <div class="place-photo-grid">
+          ${photos
+            .map(
+              (img, idx) => `
+            <a class="place-photo-item glightbox" href="${u(img.src)}" data-gallery="place-${esc(item.id)}" data-title="${esc(item.title)} (${idx + 1}/${photos.length})">
+              <img src="${u(img.src)}" alt="${esc(item.title)} photo ${idx + 1}" loading="lazy">
+              <span class="place-photo-overlay" aria-hidden="true">${icon("arrows-fullscreen")}</span>
+            </a>`
+            )
+            .join("")}
+        </div>
+      </div>`
+    : "";
+
+  return `
+  <article class="place-card exhibit-card">
+    <div class="place-card-top">
+      <div class="place-badges">
+        ${typeTag("place")}
+        ${item.location ? `<span class="place-location mono">${icon("geo-alt-fill")} ${esc(item.location)}</span>` : ""}
+        ${item.date ? `<span class="place-date mono">${icon("calendar3")} ${fmtDate(item.date)}</span>` : ""}
+      </div>
+      <div class="place-stats-chips mono">
+        <span class="stat-chip">${icon("camera")} ${photos.length}</span>
+        ${videos.length ? `<span class="stat-chip">${icon("camera-video")} ${videos.length}</span>` : ""}
+      </div>
+    </div>
+    <div class="place-card-body">
+      <h3 class="place-title">${esc(item.title)}</h3>
+      <p class="place-summary">${esc(item.summary || "")}</p>
+      ${chips(item.tags)}
+    </div>
+    ${videoSection}
+    ${photoSection}
+  </article>
+  `;
+}
+
 function journalCard(item) {
   return `<a class="exhibit-card" href="${u(`/off-the-record/journal/${item.slug}/`)}">
     <div class="exhibit-top">${typeTag("journal")}<span class="mono">${fmtDate(item.date)}</span></div>
@@ -400,18 +790,73 @@ ${backlink("/off-the-record/journal/", "Journal")}
 // Contact
 // ---------------------------------------------------------------------------
 function contactPage(site) {
+  const usMail = site.usEmail || "mmibneno@cougarNet.uh.edu";
+  const juMails = site.juEmails || [
+    "eyenine11@gmail.com",
+    "zuleyenine.noman.iit@gmail.com",
+    "zuleyenine.stu2018@juniv.edu"
+  ];
   const socials = site.social
-    .map((s) => `<a class="contact-social" href="${esc(s.url)}" target="_blank" rel="noopener">${icon(s.icon)} ${esc(s.label)}</a>`)
+    .map((s) => `<a class="contact-social" href="${esc(s.url)}" target="_blank" rel="noopener">${icon(s.icon)} <span>${esc(s.label)}</span></a>`)
     .join("");
+
   return `
-<section class="folder-head">
-  ${eyebrow("Contact")}
-  <h1>Open a line, not a case</h1>
-  <p class="folder-desc">Based in ${esc(site.location)} (${esc(site.coordinates)}). Best reached by email.</p>
+<section class="folder-head contact-folder-head">
+  ${eyebrow("Communications · UH & IIT-JU")}
+  <h1>Contact</h1>
+  <p class="folder-desc">Open for research collaborations, academic discourse, and systems security discussions. Based in ${esc(site.location)} (${esc(site.coordinates)}).</p>
 </section>
-<div class="contact-block">
-  <a class="btn btn-primary" href="mailto:${esc(site.email)}">${icon("envelope")} ${esc(site.email)}</a>
-  <div class="contact-socials">${socials}</div>
+
+<div class="contact-layout">
+  <div class="contact-cards-grid">
+    <!-- US Academic Mail -->
+    <div class="contact-card contact-card-featured">
+      <div class="contact-card-badge mono">
+        <span class="badge-dot"></span> US Academic Mail · UH
+      </div>
+      <div class="contact-card-header">
+        <h3 class="contact-card-title">${icon("mortarboard")} University of Houston</h3>
+        <p class="contact-card-subtitle">PhD Researcher &amp; Research Assistant · Electrical &amp; Computer Engineering</p>
+      </div>
+      <div class="contact-mail-highlight">
+        <a class="btn btn-primary contact-main-btn" href="mailto:${esc(usMail)}">
+          ${icon("envelope-at")} ${esc(usMail)}
+        </a>
+      </div>
+      <p class="contact-card-hint">Official inbox for academic collaborations, lab affairs, conference communications, and research inquiries.</p>
+    </div>
+
+    <!-- JU & Personal Mail -->
+    <div class="contact-card">
+      <div class="contact-card-badge mono">
+        ${icon("envelope-paper")} JU &amp; Personal Mail
+      </div>
+      <div class="contact-card-header">
+        <h3 class="contact-card-title">Jahangirnagar University &amp; Personal</h3>
+        <p class="contact-card-subtitle">Institute of Information Technology (IIT-JU)</p>
+      </div>
+      <div class="contact-ju-list">
+        ${juMails
+          .map(
+            (m) => `<a class="contact-ju-item" href="mailto:${esc(m)}">
+              <span class="contact-ju-icon">${icon("envelope")}</span>
+              <span class="contact-ju-addr mono">${esc(m)}</span>
+              <span class="contact-ju-arrow">${icon("arrow-up-right")}</span>
+            </a>`
+          )
+          .join("")}
+      </div>
+      <p class="contact-card-hint">Direct personal contact, alumni network, and communications regarding prior work.</p>
+    </div>
+  </div>
+
+  <div class="contact-social-pane">
+    <div class="contact-social-head">
+      <h3 class="section-label mono">${icon("share")} Online Profiles &amp; Networks</h3>
+      <p class="section-subtext">Find code repositories, academic profiles, video lectures, and writings.</p>
+    </div>
+    <div class="contact-socials">${socials}</div>
+  </div>
 </div>
 `;
 }
@@ -419,6 +864,6 @@ function contactPage(site) {
 module.exports = {
   coverSheetPage, transitionPage, researchLandingPage, researchDetailPage,
   publicationsLandingPage, publicationDetailPage, projectsPage, experiencePage,
-  educationPage, offTheRecordHubPage, otrListPage, watchCard, bookCard, galleryCard,
-  journalCard, journalDetailPage, contactPage,
+  achievementsPage, contentCreationPage, educationPage, offTheRecordHubPage, otrListPage, watchCard,
+  bookCard, galleryCard, placeCard, journalCard, journalDetailPage, contactPage,
 };
